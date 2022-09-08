@@ -7,7 +7,7 @@ public abstract class Projectile {
         this.owner = owner;
     }
 
-    abstract void hit(Player player);
+    public abstract void hit(Player player);
 
     public Player getOwner() {
         return owner;

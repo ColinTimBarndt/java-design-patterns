@@ -6,8 +6,7 @@ import static java.util.Calendar.APRIL;
 
 public class Main {
     public static void main(String[] args) {
-        var profile =
-                UserProfile.builder("marcus123")
+        var profile = UserProfile.builder("marcus123")
                 .firstName("Marcus")
                 .lastName("Mustermann")
                 .dateOfBirth(

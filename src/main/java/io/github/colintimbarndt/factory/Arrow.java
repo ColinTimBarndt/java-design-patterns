@@ -6,7 +6,7 @@ public class Arrow extends Projectile {
     }
 
     @Override
-    void hit(Player player) {
+    public void hit(Player player) {
         player.damage(1.0);
         getOwner().playHitSound();
     }

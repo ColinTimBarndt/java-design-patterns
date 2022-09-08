@@ -1,6 +1,7 @@
 package io.github.colintimbarndt.builder;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class UserProfile {
 
@@ -63,7 +64,9 @@ public class UserProfile {
         private String email = null;
         private Date dateOfBirth = null;
 
+        // There is only one non-null field, so it could be put in the constructor to ensure that it is given
         private Builder(String userName) {
+            Objects.requireNonNull(userName);
             this.userName = userName;
         }
 

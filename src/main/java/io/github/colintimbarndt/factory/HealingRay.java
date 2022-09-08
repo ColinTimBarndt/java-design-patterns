@@ -6,7 +6,7 @@ public class HealingRay extends Projectile {
     }
 
     @Override
-    void hit(Player player) {
+    public void hit(Player player) {
         player.heal(4.0);
     }
 }
