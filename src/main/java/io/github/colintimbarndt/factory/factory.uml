@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>io.github.colintimbarndt.factory</OriginalElement>
+  <nodes>
+    <node x="488.0004077253219" y="-32.1477110157368">io.github.colintimbarndt.factory.Game</node>
+    <node x="343.3653683834048" y="-311.6958489484773">io.github.colintimbarndt.factory.Player</node>
+    <node x="219.73032904148772" y="-43.6477110157368">io.github.colintimbarndt.factory.Projectile</node>
+    <node x="515.5" y="100.83977110157366">io.github.colintimbarndt.factory.HealingRay</node>
+    <node x="172.73032904148778" y="385.0529327610873">io.github.colintimbarndt.factory.AbstractProjectileFactory</node>
+    <node x="456.0" y="257.2359155937053">io.github.colintimbarndt.factory.HealingRayFactory</node>
+    <node x="-64.5" y="100.83977110157366">io.github.colintimbarndt.factory.Arrow</node>
+    <node x="-108.0" y="257.2359155937053">io.github.colintimbarndt.factory.ArrowFactory</node>
+    <node x="-443.7303290414877" y="149.49080114449205">io.github.colintimbarndt.factory.ProjectileFactory</node>
+    <node x="185.73032904148772" y="257.2359155937053">io.github.colintimbarndt.factory.LazerFactory</node>
+    <node x="227.23032904148772" y="100.83977110157366">io.github.colintimbarndt.factory.Lazer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="io.github.colintimbarndt.factory.HealingRay" target="io.github.colintimbarndt.factory.Projectile" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.499771101573657" />
+      <point x="586.0" y="68.0" />
+      <point x="297.73" y="68.0" />
+      <point x="-3.2904148770285246E-4" y="38.9997110157368" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.ProjectileFactory" target="io.github.colintimbarndt.factory.Lazer" relationship="CREATE">
+      <point x="135.00032904148773" y="7.009198855507947" />
+      <point x="297.73" y="207.0" />
+      <point x="-3.2904148770285246E-4" y="27.500228898426343" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.Game" target="io.github.colintimbarndt.factory.Player" relationship="TO_MANY">
+      <point x="-90.5" y="-27.5" />
+      <point x="63.63503934191709" y="85.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.LazerFactory" target="io.github.colintimbarndt.factory.AbstractProjectileFactory" relationship="GENERALIZATION">
+      <point x="-3.2904148770285246E-4" y="27.500084406294718" />
+      <point x="-3.290414877596959E-4" y="-27.49993276108728" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.ArrowFactory" target="io.github.colintimbarndt.factory.Arrow" relationship="CREATE">
+      <point x="0.0" y="-27.499915593705282" />
+      <point x="0.0" y="27.500228898426343" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.Projectile" target="io.github.colintimbarndt.factory.Player" relationship="TO_ONE">
+      <point x="53.13503934191709" y="-39.0" />
+      <point x="-81.0" y="85.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.ArrowFactory" target="io.github.colintimbarndt.factory.AbstractProjectileFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="27.500084406294718" />
+      <point x="6.0" y="349.0" />
+      <point x="297.73" y="349.0" />
+      <point x="-3.290414877596959E-4" y="-27.49993276108728" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.LazerFactory" target="io.github.colintimbarndt.factory.Lazer" relationship="CREATE">
+      <point x="-3.2904148770285246E-4" y="-27.499915593705282" />
+      <point x="-3.2904148770285246E-4" y="27.500228898426343" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.HealingRayFactory" target="io.github.colintimbarndt.factory.AbstractProjectileFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="27.500084406294718" />
+      <point x="586.0" y="349.0" />
+      <point x="297.73" y="349.0" />
+      <point x="-3.290414877596959E-4" y="-27.49993276108728" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.ProjectileFactory" target="io.github.colintimbarndt.factory.Arrow" relationship="CREATE">
+      <point x="135.00032904148773" y="-12.490801144492053" />
+      <point x="6.0" y="187.5" />
+      <point x="0.0" y="27.500228898426343" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.Lazer" target="io.github.colintimbarndt.factory.Projectile" relationship="GENERALIZATION">
+      <point x="-3.2904148770285246E-4" y="-27.499771101573657" />
+      <point x="-3.2904148770285246E-4" y="38.9997110157368" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.ProjectileFactory" target="io.github.colintimbarndt.factory.HealingRay" relationship="CREATE">
+      <point x="135.00032904148773" y="22.009198855507947" />
+      <point x="586.0" y="222.0" />
+      <point x="0.0" y="27.500228898426343" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.HealingRayFactory" target="io.github.colintimbarndt.factory.HealingRay" relationship="CREATE">
+      <point x="0.0" y="-27.499915593705282" />
+      <point x="0.0" y="27.500228898426343" />
+    </edge>
+    <edge source="io.github.colintimbarndt.factory.Arrow" target="io.github.colintimbarndt.factory.Projectile" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.499771101573657" />
+      <point x="6.0" y="68.0" />
+      <point x="297.73" y="68.0" />
+      <point x="-3.2904148770285246E-4" y="38.9997110157368" />
+    </edge>
+  </edges>
+  <settings layout="Channel" zoom="0.7269394435351887" showDependencies="true" x="168.35949236311205" y="71.9051783141208" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

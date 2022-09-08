@@ -8,3 +8,5 @@ This example covers both common ways of implementing a factory:
 - [ProjectileFactory](./ProjectileFactory.java)
   - `createArrow(...)`
   - etc.
+
+![UML Diagram](./factory.svg)
