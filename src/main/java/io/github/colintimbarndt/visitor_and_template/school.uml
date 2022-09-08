@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="166.5" y="345.5">io.github.colintimbarndt.other.SchoolVisitable</node>
+    <node x="156.0" y="108.0">io.github.colintimbarndt.other.Classroom</node>
+    <node x="-129.46973180076634" y="107.99999999999999">io.github.colintimbarndt.other.Student</node>
+    <node x="462.46973180076634" y="142.5">io.github.colintimbarndt.other.SchoolBuilding</node>
+    <node x="177.5" y="449.56206896551726">io.github.colintimbarndt.other.MemberVisitor</node>
+    <node x="-129.46973180076628" y="223.0">io.github.colintimbarndt.other.Teacher</node>
+    <node x="-133.5" y="495.5620689655172">io.github.colintimbarndt.other.MemberCounter</node>
+    <node x="-100.46973180076628" y="345.5">io.github.colintimbarndt.other.Member</node>
+    <node x="426.5" y="484.06206896551726">io.github.colintimbarndt.other.SchoolVisitor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="io.github.colintimbarndt.other.Classroom" target="io.github.colintimbarndt.other.Teacher" relationship="TO_ONE">
+      <point x="-114.0" y="57.5" />
+      <point x="103.5" y="0.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.MemberVisitor" target="io.github.colintimbarndt.other.SchoolVisitor" relationship="REALIZATION">
+      <point x="92.5" y="0.0" />
+      <point x="-92.5" y="0.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.Classroom" target="io.github.colintimbarndt.other.Student" relationship="TO_MANY">
+      <point x="-114.0" y="-57.5" />
+      <point x="103.5" y="0.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.MemberCounter" target="io.github.colintimbarndt.other.MemberVisitor" relationship="GENERALIZATION">
+      <point x="123.5" y="0.0" />
+      <point x="-92.5" y="0.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.SchoolBuilding" target="io.github.colintimbarndt.other.Classroom" relationship="TO_MANY">
+      <point x="-135.0" y="0.0" />
+      <point x="114.0" y="0.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.SchoolBuilding" target="io.github.colintimbarndt.other.SchoolVisitable" relationship="REALIZATION">
+      <point x="0.0" y="50.5" />
+      <point x="597.4697318007663" y="373.0" />
+      <point x="103.5" y="0.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.Classroom" target="io.github.colintimbarndt.other.SchoolVisitable" relationship="REALIZATION">
+      <point x="0.0" y="85.0" />
+      <point x="0.0" y="-27.5" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.Teacher" target="io.github.colintimbarndt.other.Member" relationship="GENERALIZATION">
+      <point x="0.0" y="27.5" />
+      <point x="0.0" y="-27.5" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.Student" target="io.github.colintimbarndt.other.Member" relationship="GENERALIZATION">
+      <point x="-103.5" y="0.0" />
+      <point x="-146.96973180076634" y="135.5" />
+      <point x="-146.96973180076634" y="373.0" />
+      <point x="-74.5" y="0.0" />
+    </edge>
+    <edge source="io.github.colintimbarndt.other.Member" target="io.github.colintimbarndt.other.SchoolVisitable" relationship="REALIZATION">
+      <point x="0.0" y="27.5" />
+      <point x="-25.969731800766283" y="373.0" />
+      <point x="-103.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Channel" zoom="0.8166458072590745" showDependencies="true" x="429.6375478927217" y="376.3977011494243" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
